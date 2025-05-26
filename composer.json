@@ -1,5 +1,5 @@
 {
-    "name": "sadegh19b/laravel-persian-validation",
+    "name": "juniora/laravel-persian-validation",
     "description": "A comprehensive Laravel validation package for Persian text, numbers, dates, and Iranian national identifiers",
     "keywords": [
         "laravel",
