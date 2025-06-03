@@ -4,7 +4,6 @@ namespace Sadegh19b\LaravelPersianValidation\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Support\Str;
 use Sadegh19b\LaravelPersianValidation\Support\Helper;
 
 class IranianNationalId implements ValidationRule
@@ -74,7 +73,7 @@ class IranianNationalId implements ValidationRule
      */
     protected function isValidNationalCode(string $value): bool
     {
-        if (Str::length($value) !== 10) {
+        if (mb_strlen($value) !== 10) {
             return false;
         }
 
